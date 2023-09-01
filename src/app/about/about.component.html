@@ -1,0 +1,17 @@
+
+
+<div class="d-flex justify-content-center align-items-center mt-5">
+    <div class="row">
+        <h1 class="text-center text-success">About Us</h1>
+            <div class="col-auto">
+            <input type="text" class="form-control" placeholder="Input here.." #val>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3" (click)="submitValueFromParent(val)">Submit here</button>
+          </div>
+        <app-comp1 *ngIf="isDestroy" [myValue]="valFromParen" >Content: {{ valFromParen}}</app-comp1><br><br>
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-danger mt-2" (click)="destroy()">Destroy Component</button>
+        </div>
+    </div>
+</div>
