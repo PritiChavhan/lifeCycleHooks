@@ -19,6 +19,7 @@ export class Comp1Component implements OnInit,OnChanges,DoCheck,AfterContentInit
  }
  ngOnInit(){
   console.log("ngOnInit called");
+  console.log("ngOnInit checked!")
   this.counter=setInterval(()=>{
     this.num = this.num+1;
     console.log(this.num);
