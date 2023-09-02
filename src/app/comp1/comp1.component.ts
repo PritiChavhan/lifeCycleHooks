@@ -27,6 +27,7 @@ export class Comp1Component implements OnInit,OnChanges,DoCheck,AfterContentInit
  }
  ngDoCheck(){
   console.log("ngDoCheck called");
+  console.log("test");
  }
  ngAfterContentInit(){
   console.log("ngAfterContentInit called");
